@@ -1,0 +1,488 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* App Container */
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(67, 206, 162, 0.3);
+  margin-bottom: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav h1 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Home Page */
+h1 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Employee Cards Container */
+.employee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Employee Card */
+.employee-card {
+  background: linear-gradient(135deg, #ABDCFF 0%, #0396FF 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.employee-card:nth-child(2n) {
+  background: linear-gradient(135deg, #FEB692 0%, #EA5455 100%);
+}
+
+.employee-card:nth-child(3n) {
+  background: linear-gradient(135deg, #CE9FFC 0%, #7367F0 100%);
+}
+
+.employee-card:nth-child(4n) {
+  background: linear-gradient(135deg, #90F7EC 0%, #32CCBC 100%);
+}
+
+.employee-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.employee-card h1 {
+  font-size: 1.6rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.employee-card h3 {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.employee-card p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Button Styling */
+.employee-card button {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.employee-card button:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.employee-card button:active {
+  transform: translateY(0);
+}
+
+/* Card decorative elements */
+.employee-card::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.employee-card::after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Loading State */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+  
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .employee-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Employee Details Page Styling */
+.indivdualCard {
+  max-width: 600px;
+  margin: 3rem auto;
+  background: linear-gradient(135deg, #6883ba 0%, #2b5876 100%);
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 15px 35px rgba(43, 88, 118, 0.2), 0 5px 15px rgba(0, 0, 0, 0.1);
+  color: white;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.indivdualCard:hover {
+  transform: translateY(-8px) rotateX(3deg);
+  box-shadow: 0 20px 40px rgba(43, 88, 118, 0.3), 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Decorative elements */
+.indivdualCard::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 0;
+}
+
+.indivdualCard::after {
+  content: '';
+  position: absolute;
+  bottom: -80px;
+  left: -80px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  z-index: 0;
+}
+
+/* Heading Styles */
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+}
+
+.heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+
+/* Employee Name */
+.name {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+}
+
+.name::before {
+  content: 'Name: ';
+  font-size: 1.2rem;
+  opacity: 0.7;
+  margin-right: 10px;
+  font-weight: 400;
+}
+
+/* Role/Department */
+.role {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-bottom: 1.25rem;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.5rem 1.25rem;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  font-weight: 600;
+}
+
+.role::before {
+  content: '🏢 ';
+  margin-right: 5px;
+}
+
+/* Email */
+.mail {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border-left: 4px solid rgba(255, 255, 255, 0.4);
+}
+
+.mail::before {
+  content: '✉️ ';
+  margin-right: 5px;
+}
+
+/* Salary */
+.salary {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+  color: #f8f9fa;
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.salary::before {
+  content: '💰 ';
+  margin-right: 8px;
+}
+
+/* Date of Join */
+.doj {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  opacity: 0.8;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1rem;
+}
+
+.doj::before {
+  content: '📅 ';
+  margin-right: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .indivdualCard {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+  
+  .heading {
+    font-size: 2rem;
+  }
+  
+  .name {
+    font-size: 1.6rem;
+  }
+}
+
+/* Animation for card appearance */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.indivdualCard {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Navigation Bar Styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2.5rem;
+  background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(24, 90, 157, 0.2);
+  margin-bottom: 2.5rem;
+  position: sticky;
+  top: 1rem;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+nav h1 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.5px;
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+nav h1::before {
+  content: '👥';
+  position: absolute;
+  left: 0;
+  font-size: 1.6rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+nav a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+nav a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+nav a:active {
+  transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.2rem;
+  }
+  
+  nav h1 {
+    font-size: 1.5rem;
+  }
+  
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Container for the nav */
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+

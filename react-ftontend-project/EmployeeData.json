@@ -1,0 +1,164 @@
+{
+    "employees": {
+      "emp101": {
+        "name": "John Smith",
+        "department": "Marketing",
+        "position": "Marketing Manager",
+        "salary": 75000,
+        "email": "john.smith@company.com",
+        "joinDate": "2018-05-15"
+      },
+      "emp102": {
+        "name": "Sarah Johnson",
+        "department": "HR",
+        "position": "HR Specialist",
+        "salary": 65000,
+        "email": "sarah.j@company.com",
+        "joinDate": "2019-02-20"
+      },
+      "emp103": {
+        "name": "Michael Brown",
+        "department": "IT",
+        "position": "Software Developer",
+        "salary": 85000,
+        "email": "michael.b@company.com",
+        "joinDate": "2017-11-10"
+      },
+      "emp104": {
+        "name": "Emily Davis",
+        "department": "Finance",
+        "position": "Financial Analyst",
+        "salary": 72000,
+        "email": "emily.d@company.com",
+        "joinDate": "2019-07-22"
+      },
+      "emp105": {
+        "name": "Robert Wilson",
+        "department": "Operations",
+        "position": "Operations Manager",
+        "salary": 78000,
+        "email": "robert.w@company.com",
+        "joinDate": "2016-09-05"
+      },
+      "emp106": {
+        "name": "Jennifer Lee",
+        "department": "Sales",
+        "position": "Sales Representative",
+        "salary": 60000,
+        "email": "jennifer.l@company.com",
+        "joinDate": "2020-03-14"
+      },
+      "emp107": {
+        "name": "David Miller",
+        "department": "IT",
+        "position": "System Administrator",
+        "salary": 70000,
+        "email": "david.m@company.com",
+        "joinDate": "2018-08-30"
+      },
+      "emp108": {
+        "name": "Lisa Anderson",
+        "department": "Marketing",
+        "position": "Content Writer",
+        "salary": 58000,
+        "email": "lisa.a@company.com",
+        "joinDate": "2020-01-25"
+      },
+      "emp109": {
+        "name": "James Taylor",
+        "department": "Finance",
+        "position": "Accountant",
+        "salary": 68000,
+        "email": "james.t@company.com",
+        "joinDate": "2017-06-18"
+      },
+      "emp110": {
+        "name": "Patricia Martinez",
+        "department": "HR",
+        "position": "Recruiter",
+        "salary": 62000,
+        "email": "patricia.m@company.com",
+        "joinDate": "2019-09-12"
+      },
+      "emp111": {
+        "name": "Daniel Garcia",
+        "department": "IT",
+        "position": "Database Administrator",
+        "salary": 82000,
+        "email": "daniel.g@company.com",
+        "joinDate": "2016-12-01"
+      },
+      "emp112": {
+        "name": "Nancy Robinson",
+        "department": "Operations",
+        "position": "Logistics Coordinator",
+        "salary": 55000,
+        "email": "nancy.r@company.com",
+        "joinDate": "2021-02-28"
+      },
+      "emp113": {
+        "name": "Paul Clark",
+        "department": "Sales",
+        "position": "Sales Manager",
+        "salary": 90000,
+        "email": "paul.c@company.com",
+        "joinDate": "2015-07-15"
+      },
+      "emp114": {
+        "name": "Karen Rodriguez",
+        "department": "Marketing",
+        "position": "Social Media Specialist",
+        "salary": 59000,
+        "email": "karen.r@company.com",
+        "joinDate": "2020-06-10"
+      },
+      "emp115": {
+        "name": "Kevin Lewis",
+        "department": "IT",
+        "position": "Frontend Developer",
+        "salary": 77000,
+        "email": "kevin.l@company.com",
+        "joinDate": "2018-03-22"
+      },
+      "emp116": {
+        "name": "Jessica Walker",
+        "department": "Finance",
+        "position": "Payroll Specialist",
+        "salary": 63000,
+        "email": "jessica.w@company.com",
+        "joinDate": "2019-11-05"
+      },
+      "emp117": {
+        "name": "Mark Hall",
+        "department": "Operations",
+        "position": "Warehouse Manager",
+        "salary": 67000,
+        "email": "mark.h@company.com",
+        "joinDate": "2017-04-18"
+      },
+      "emp118": {
+        "name": "Amanda Young",
+        "department": "HR",
+        "position": "Training Coordinator",
+        "salary": 61000,
+        "email": "amanda.y@company.com",
+        "joinDate": "2020-08-30"
+      },
+      "emp119": {
+        "name": "Steven Allen",
+        "department": "IT",
+        "position": "Backend Developer",
+        "salary": 83000,
+        "email": "steven.a@company.com",
+        "joinDate": "2016-10-12"
+      },
+      "emp120": {
+        "name": "Michelle King",
+        "department": "Sales",
+        "position": "Account Executive",
+        "salary": 73000,
+        "email": "michelle.k@company.com",
+        "joinDate": "2018-07-25"
+      }
+    }
+  }
