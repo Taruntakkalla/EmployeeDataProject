@@ -8,6 +8,7 @@ import Home from './components/Home'
 import EmployeeDetails from './components/EmployeeDetails'
 import EditForm from './components/EditForm'
 import Post from './components/post'
+import Login from './components/Login'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +22,7 @@ function App() {
         <Route path = "/details/:id" element = {<EmployeeDetails/>}/>
         <Route path = "/editform/:id" element = {<EditForm/>}/>
         <Route path = "/post" element = {<Post/>}/>
+        <Route path = "/login" element = {<Login/>}/>
       </Routes>
     </>
   )

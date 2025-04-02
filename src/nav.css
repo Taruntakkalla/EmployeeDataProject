@@ -1,0 +1,54 @@
+/* nav.css */
+
+.navdiv {
+    background: #007BFF;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navdiv h4 {
+    color: white;
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navdiv .homeL {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navdiv .homeL:hover {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .navdiv {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .navdiv .homeL {
+        display: block;
+        margin: 5px 0;
+    }
+}

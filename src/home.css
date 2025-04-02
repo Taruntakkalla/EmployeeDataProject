@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.postCard {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    margin: auto;
+}
+
+.formP {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formP input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.formP input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.btnP {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btnP:hover {
+    background: #0056b3;
+}
+
+.employee-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.employee-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 260px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.employee-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.employee-card h1 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.employee-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.employee-card p {
+    font-size: 14px;
+    color: #777;
+}
+
+.employee-card button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.employee-card button:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .employee-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .employee-card {
+        width: 90%;
+    }
+}

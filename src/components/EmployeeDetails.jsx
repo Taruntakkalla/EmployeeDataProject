@@ -1,7 +1,7 @@
 import { useEffect,useState } from "react"
 import { useParams } from "react-router-dom"
 import axios from "axios"
-
+import "../details.css"
 const EmployeeDetails = ()=>{
     const {id} = useParams()
     const [personDetails,setpd] = useState({})
@@ -18,8 +18,8 @@ const EmployeeDetails = ()=>{
     return(
         <>
         <div className = "indivdualCard">
-         <h1 className = "heading">Details</h1>
-         <h1 className = "name">{personDetails.name}</h1>
+         
+         <h1 className = "name">Name : {personDetails.name}</h1>
          <h2 className = "role">role:{personDetails.department}</h2>
          <p className = "mail">EMAIL:{personDetails.email}</p>
          <h2 className = "salary">Salary: {personDetails.salary}</h2>

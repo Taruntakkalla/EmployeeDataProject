@@ -3,7 +3,7 @@ import { useEffect,useState,useReducer, use } from "react"
 import { Link } from "react-router-dom"
 import { useSelector,useDispatch } from "react-redux"
 
-
+import "../home.css"
 
 const Home = ()=>{
     const [eData,setEdata] = useState([])

@@ -8,6 +8,7 @@ const Nav = ()=>{
             <h4 >Employee Details</h4>
             <Link className="homeL" to = "/">Home</Link>
             <Link className="homeL" to = "/post">post</Link>
+            <Link className = "homeL" to = "/login">Login</Link>
         </div>
         </>
     )
